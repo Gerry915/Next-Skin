@@ -1,0 +1,61 @@
+.list {
+  margin: 3rem 5rem;
+  min-height: 100vh;
+
+  & h1 {
+    margin-bottom: 3rem;
+    font-size: 7rem;
+    font-weight: 100;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & button {
+    cursor: pointer;
+    border: none;
+    background-color: #020300;
+    color: whitesmoke;
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: background-color, color, 0.2s ease;
+    &:first-of-type {
+      margin-right: 1rem;
+    }
+    &:hover {
+      background-color: whitesmoke;
+      color: #020300;
+    }
+  }
+}
+
+.button-active {
+  background-color: indianred !important;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.collapse {
+  animation-name: collapse;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes collapse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    background-color: black;
+    color: white;
+  }
+}
